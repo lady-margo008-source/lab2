@@ -4,6 +4,7 @@ public class InputService {
     public String readSearchQuery(){
         System.out.print("Введите запрос для Википедии:");
         String input = scanner.nextLine();
+
         if (input==null||input.trim().isEmpty()){
             System.out.print("Запрос не может быть пустым! Повторите ввод!");
             return readSearchQuery();
@@ -26,5 +27,3 @@ public class InputService {
             }
         }
     }
-
-}

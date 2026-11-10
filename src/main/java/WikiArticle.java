@@ -1,11 +1,11 @@
 public class WikiArticle {
     private String title;
-    private int pageId;
+    private int pageid;
 
     public String GetTitle(){
         return  title;
     }
-    public int getPageId(){
-        return pageId;
+    public int getPageid(){
+        return pageid;
     }
 }

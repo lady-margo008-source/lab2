@@ -7,7 +7,7 @@ public class OutputService {
         System.out.println("\n===РЕЗУЛЬТАТЫ ПОИСКА В ВИКИПЕДИИ===");
         int number=1;
         for (WikiArticle article : articles) {
-            System.out.println(number + ". Название: " + article.GetTitle() + " (ID: " + article.getPageId() + ")");
+            System.out.println(number + ". Название: " + article.GetTitle() + " (ID: " + article.getPageid() + ")");
             number++;
         }
         System.out.println("=====================================\n");
