@@ -38,7 +38,8 @@ import java.util.List;
                 browserService.openArticleByPageId(selectedArticle.getPageid());
 
             } catch (Exception e) {
-                System.out.println("\n[ВНИМАНИЕ] Произошла сетевая или системная ошибка: " + e.getMessage());
+                String errorDetails = (e.getMessage() != null) ? e.getMessage() : e.getClass().getSimpleName();
+                System.out.println("\nВНИМАНИЕ! Произошла сетевая или системная ошибка: " + errorDetails);
                 System.out.println("Пожалуйста, проверьте интернет-соединение и попробуйте снова.");
             }
 
